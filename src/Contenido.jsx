@@ -1,10 +1,18 @@
-function Contenido(){
+import Imagen from "./Imagen"
 
+function Contenido(){
+    let imagenes = [1,2,3,4,5,6,7,8,9]
     return(
         <main>
-            <h1>Hola mundo!!!</h1>
-            <p>hola holaaaa</p>
-        </main>
+        <h1>Galeria de imagenes</h1>
+        <div>
+          {
+            imagenes.map((img)=> (
+                <Imagen />
+            ))
+          }
+        </div>
+      </main>
     )
 }
 
